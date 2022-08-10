@@ -26,9 +26,6 @@ def CheckGame(game_input, field, field_mine, x, y, obj, easy_start, cheats, deve
                                     continue
                                 if field_mine[x*k+z]!=0 and field_mine[x*k+z]!=obj:
                                     field[x*k+z]=field_mine[x*k+z]
-                    if field_mine[x*i+j]!=0 and field_mine[x*i+j]!=obj:
-                        pass
-
     if field_mine[position]==obj:
         out=False
         input('You are loss(')
