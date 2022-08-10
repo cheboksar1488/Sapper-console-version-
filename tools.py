@@ -1,4 +1,4 @@
-def checkmine(x, y, cell_coordinate_x, cell_coordinate_y, pole_list, obj):
+def checkmine(x, y, cell_coordinate_x, cell_coordinate_y, field_list, obj):
     out=0
     for i in range(-1, 2):
         for j in range(-1, 2):
@@ -6,7 +6,7 @@ def checkmine(x, y, cell_coordinate_x, cell_coordinate_y, pole_list, obj):
             y1=cell_coordinate_y+i
             if x1<0 or x1>=x or y1<0 or y1>=y:
                 continue
-            if pole_list[x*y1+x1]==obj:
+            if field_list[x*y1+x1]==obj:
                 out+=1
     return out
 def showlist(x, y, list, coordinate_grid):
