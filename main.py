@@ -6,14 +6,14 @@ def start_game():
     field_mine=[
         stock
     ]*x*y
-    #create mine on pole_mine
+    #create mine on field_mine
     for i in range(nym_mines):
         x_mine=random.randint(0, x-1)
         y_mine=random.randint(0, y-1)
         position=x*y_mine+x_mine
         if field_mine[position]!=mine:
             field_mine[position]=mine
-    #check mine on pole_mine
+    #check mine on field_mine
     for y_pole in range(y):
         for x_pole in range(x):
             position=x*y_pole+x_pole
